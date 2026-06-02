@@ -1,0 +1,30 @@
+# Git ignore rules for trading bot project
+
+# Environment variables - NEVER commit these!
+.env
+
+# Virtual environment
+venv/
+venv_linux/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Logs (optional - you may want to keep these locally)
+logs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
