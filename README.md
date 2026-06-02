@@ -1,7 +1,7 @@
 # Binance Futures Testnet Trading Bot
 
-A Python CLI application that places **Market** and **Limit** orders on the **Binance Futures Testnet (USDT-M)**.  
-Built with clean layered architecture, comprehensive logging, and a rich terminal UX powered by [Typer](https://typer.tiangolo.com/) and [Rich](https://rich.readthedocs.io/).
+A Python CLI application that places **Market** and **Limit** orders on the **Binance Futures Testnet (USDT-M)**.
+Built with clean layered architecture, comprehensive logging, and a rich terminal UX powered by [argparse](https://docs.python.org/3/library/argparse.html) and [Rich](https://rich.readthedocs.io/).
 
 ---
 
@@ -22,7 +22,7 @@ trading_bot/
 │   ├── client.py           # Binance API layer (Testnet client wrapper)
 │   ├── validators.py       # Input validation (symbol, side, type, qty, price)
 │   ├── orders.py           # Business logic (orchestrates validation + client)
-│   └── cli.py              # CLI entry point (Typer + Rich)
+│   └── cli.py              # CLI entry point (argparse + Rich)
 ├── logs/
 │   └── bot_activity.log    # Auto-generated on first run
 ├── .env                    # API credentials (NOT committed)
@@ -160,7 +160,7 @@ Log format:
 
 ## Bonus Feature
 
-✅ **Enhanced CLI UX** — Typer with Rich formatting:
+✅ **Enhanced CLI UX** — argparse with Rich formatting:
 - Colour-coded BUY/SELL sides (green/red)
 - Spinner during API call
 - Structured request & response tables with borders
